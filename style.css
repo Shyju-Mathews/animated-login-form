@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, #290c28, #4d2b63, #35243e);
+}
+
+.container {
+    width: 350px;
+    height: 500px;
+    overflow: hidden;
+    background: #401759;
+    border-radius: 10px;
+    box-shadow: 5px 20px 50px #000;
+}
+
+
+/* To Hide Checkbox  */
+
+#chk {
+    display: none;
+}
+
+.signup {
+    width: 100%;
+    height: 100%;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 2.3em;
+    margin: 60px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+input {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    height: 20px;
+    background: #e0dede;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+button {
+    width: 30%;
+    height: 40px;
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+    color: #fff;
+    background: #62358c;
+    font-size: 1em;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: .2s ease-in;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #6d44b8;
+}
+
+.login {
+    height: 460px;
+    background: #eee;
+    border-radius: 60% / 10%;
+    transform: translateY(-180px);
+    transition: .8s ease-in-out;
+}
+
+.login label {
+    color: #573b8a;
+    transform: scale(0.6);
+}
+
+
+/* To Display Login */
+
+#chk:checked~.login {
+    transform: translateY(-500px);
+}
+
+#chk:checked~.login label {
+    transform: scale(1);
+}
+
+#chk:checked~.signup label {
+    transform: scale(0.6);
+}
